@@ -72,6 +72,7 @@ void IRAM_ATTR   adc_init(void);
 void IRAM_ATTR   wifi_init(void);
 void IRAM_ATTR   spiffs_init(void);
 void IRAM_ATTR   serial_init(void);
+int8_t           post_to_database(void);
 
 # include "ota.h"                                                   // contains inline functions. It has to be here! 
 

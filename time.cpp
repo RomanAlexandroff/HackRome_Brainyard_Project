@@ -67,7 +67,7 @@ bool  get_time(void)
 
 unsigned int  time_till_wakeup(void)
 {
-    const uint8_t wakeup_hour[] = {8, 10, 12, 14, 16, 18, 20};
+    const uint8_t wakeup_hour[] = {8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22};
     uint8_t       i;
 
     if (rtc_g.hour >= 20)

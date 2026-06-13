@@ -45,6 +45,7 @@ void  loop(void)
     moisture_check();
     react();
     get_time();
+    post_to_database();
     notify_user();
     telegram_check();
     go_to_sleep(time_till_wakeup());
