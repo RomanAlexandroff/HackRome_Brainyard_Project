@@ -17,8 +17,8 @@ void  react(void)
 {
     if (rtc_g.battery <= 875 && rtc_g.temp < 39.00)               // potentially low battery and no charging — switching off
         low_battery_handle();
-    if (rtc_g.moisture > 3100 && rtc_g.temp >= 40.00)             // potentially charging is in action — no work, waiting for charging to be complete
-        charging_detection();
+//    if (rtc_g.moisture > 3100 && rtc_g.temp >= 40.00)             // potentially charging is in action — no work, waiting for charging to be complete
+        //charging_detection();
 }
 
 

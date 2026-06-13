@@ -22,6 +22,7 @@
 
 # define TIME_ZONE     1                                                  // according to the GMT standart
 
+# define SSID0         "TSH Guest"
 # define SSID1         "Topeni-Streda"
 # define PASSWORD1     "ModryDracek1"
 # define SSID2         "42P_guest"

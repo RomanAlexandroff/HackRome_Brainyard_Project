@@ -63,6 +63,7 @@ void  wifi_init(void)
     WiFi.mode(WIFI_STA);
     WiFi.persistent(true);
     secured_client.setCACert(TELEGRAM_CERTIFICATE_ROOT);
+    wifiMulti.addAP(SSID0);
     wifiMulti.addAP(SSID1, PASSWORD1);
     wifiMulti.addAP(SSID2, PASSWORD2);
     wifiMulti.addAP(SSID3, PASSWORD3);
