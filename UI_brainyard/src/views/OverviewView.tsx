@@ -11,13 +11,11 @@ import type {
   IrrigationMarker,
   Measurement,
   Plot,
-  Vineyard,
 } from "../types/vineyard";
 import { buildSoilMoistureComparisonData } from "../utils/chartData";
 import { formatPercent, formatTemperature } from "../utils/formatters";
 
 type OverviewViewProps = {
-  vineyard: Vineyard;
   plots: Plot[];
   measurements: Measurement[];
   alerts: Alert[];
@@ -27,7 +25,6 @@ type OverviewViewProps = {
 };
 
 export function OverviewView({
-  vineyard,
   plots,
   measurements,
   alerts,
@@ -53,17 +50,6 @@ export function OverviewView({
 
   return (
     <div className="stack">
-      <section className="overview-intro">
-        <div>
-          <p className="eyebrow">Brainyard</p>
-          <h2>{vineyard.tagline}</h2>
-          <p>
-            Sensor measurements, field activity, alerts, and research evidence are organized in one
-            operational dashboard for vineyard teams.
-          </p>
-        </div>
-      </section>
-
       <section className="metric-grid" aria-label="Vineyard summary">
         <MetricCard
           comparison="Up 5.1 points after yesterday evening irrigation"

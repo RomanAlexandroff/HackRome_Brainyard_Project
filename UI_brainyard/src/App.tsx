@@ -293,7 +293,6 @@ function App() {
               irrigationMarkers={dashboardData.irrigationMarkers}
               measurements={dashboardData.measurements}
               plots={dashboardData.plots}
-              vineyard={dashboardData.vineyard}
               onSelectPlot={handleSelectPlot}
             />
           ) : null}

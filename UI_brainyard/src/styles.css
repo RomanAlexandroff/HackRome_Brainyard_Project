@@ -335,35 +335,12 @@ p {
   gap: 22px;
 }
 
-.overview-intro,
 .view-card,
 .chart-card {
   border: 1px solid rgba(223, 228, 220, 0.95);
   border-radius: var(--radius-lg);
   background: var(--color-surface);
   box-shadow: var(--shadow-card);
-}
-
-.overview-intro {
-  display: flex;
-  justify-content: space-between;
-  gap: 22px;
-  padding: clamp(20px, 3vw, 30px);
-}
-
-.overview-intro h2 {
-  max-width: 720px;
-  margin-top: 7px;
-  color: var(--color-ink);
-  font-size: clamp(1.35rem, 2.2vw, 2rem);
-  line-height: 1.18;
-}
-
-.overview-intro p:not(.eyebrow) {
-  max-width: 800px;
-  margin-top: 10px;
-  color: var(--color-muted);
-  line-height: 1.6;
 }
 
 .view-card,
@@ -1254,7 +1231,6 @@ p {
 
   .view-card,
   .chart-card,
-  .overview-intro,
   .modal {
     border-radius: 14px;
     padding: 16px;
